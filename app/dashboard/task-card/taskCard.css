@@ -1,0 +1,32 @@
+.card {
+  margin: 10px;
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+}
+
+.card h3 {
+  line-height: 15px;
+}
+
+.priority-badg {
+  width: auto;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px 10px 0px;
+}
+
+.time svg {
+  margin-right: 5px;
+}
+
+.time-ago {
+  font-size: 12px;
+}

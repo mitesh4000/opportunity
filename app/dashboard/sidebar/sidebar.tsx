@@ -1,3 +1,5 @@
+"use client";
+import { useGlobalContext } from "@/app/Context/store";
 import {
   BsBarChartLine,
   BsBell,
@@ -11,8 +13,9 @@ import {
   BsTools,
 } from "react-icons/bs";
 import "./sidebar.css";
-
 const Sidebar = () => {
+  const { toggleAddTaskModal, isAddTaskModalOpen } = useGlobalContext();
+
   return (
     <div className="sidebar">
       <div>
@@ -55,7 +58,7 @@ const Sidebar = () => {
               <BsBarChartLine />
               Analytics
             </li>
-            <button>
+            <button onClick={toggleAddTaskModal}>
               Create new task <BsFillPlusCircleFill />
             </button>
           </ul>

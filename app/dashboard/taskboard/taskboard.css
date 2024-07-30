@@ -1,0 +1,30 @@
+.board {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.column {
+  width: 100%;
+}
+
+.highlight-column {
+  background-color: chartreuse;
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+}
+
+.column-header p {
+  margin: 5px;
+}
+
+.column-header svg {
+  margin: 10px;
+}
